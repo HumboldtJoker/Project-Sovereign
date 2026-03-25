@@ -223,7 +223,7 @@ def analyze_news_sentiment(ticker: str) -> Dict:
             "positive": "[+]",
             "neutral": "[=]",
             "negative": "[-]",
-        }[article["sentiment"]]
+        }.get(article.get("sentiment", "neutral"), "[?]")
 
         articles_text.append(
             f"{i}. {sentiment_emoji} {article['title']}\n"

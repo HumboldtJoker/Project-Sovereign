@@ -29,7 +29,7 @@ from core.config import PROJECT_ROOT, ANTHROPIC_API_KEY, ALPACA_PAPER
 from core.react_agent import ReActAgent
 from core.tool_registry import Tool
 from core.decision_loop import DecisionLoop
-from logging.structured_logger import save_execution_log, save_canonical_log
+from audit_log.structured_logger import save_execution_log, save_canonical_log
 
 # ── Analysis tools ───────────────────────────────────────────────────────────
 from analysis.technical import get_technical_indicators

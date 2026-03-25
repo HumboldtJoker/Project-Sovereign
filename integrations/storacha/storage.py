@@ -190,9 +190,12 @@ def upload_analysis_report(
     try:
         result = upload_file(str(tmp_path))
     finally:
-        # Clean up temp file
+        # Clean up temp file and directory
         tmp_path.unlink(missing_ok=True)
-        tmp_dir.rmdir()
+        try:
+            tmp_dir.rmdir()
+        except OSError:
+            pass
 
     result["ticker"] = ticker
     logger.info(
