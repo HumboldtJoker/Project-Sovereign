@@ -143,11 +143,16 @@ def build_agent() -> ReActAgent:
         function=executor.get_portfolio_summary,
     ))
 
+    def _get_stock_price(ticker: str) -> dict:
+        """Wrap scalar price into dict for agent tool interface."""
+        price = executor.get_current_price(ticker)
+        return {"ticker": ticker, "price": price}
+
     agent.tools.register(Tool(
         name="get_stock_price",
         description="Get current price for a stock",
         parameters={"ticker": "string"},
-        function=executor.get_current_price,
+        function=_get_stock_price,
     ))
 
     # ── Risk tools ───────────────────────────────────────────────────────
