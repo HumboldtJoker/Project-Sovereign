@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+data/
+logs/
+.venv/
+agent_log.json

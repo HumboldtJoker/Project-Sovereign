@@ -1,0 +1,59 @@
+{
+  "agent_name": "Sovereign Market Intelligence Agent",
+  "version": "1.0.0",
+  "operator_wallet": "",
+  "erc8004_identity": "",
+  "description": "Autonomous market analysis agent with 8-layer safety system, multi-source intelligence, and verifiable execution logging. Democratizing institutional-grade investment research at $0.05 per analysis.",
+  "supported_tools": [
+    "alpaca_trading",
+    "yahoo_finance",
+    "fred_macro_data",
+    "congressional_trades",
+    "news_sentiment",
+    "technical_analysis",
+    "portfolio_correlation",
+    "sector_allocation",
+    "risk_assessment",
+    "storacha_storage",
+    "lit_protocol_encryption"
+  ],
+  "supported_tech_stacks": [
+    "python",
+    "ethereum",
+    "ipfs",
+    "base_l2"
+  ],
+  "compute_constraints": {
+    "max_analysis_time_seconds": 120,
+    "max_concurrent_tools": 5,
+    "requires_gpu": false
+  },
+  "supported_task_categories": [
+    "market_analysis",
+    "trade_execution",
+    "risk_assessment",
+    "portfolio_optimization",
+    "signal_generation",
+    "macro_regime_detection",
+    "congressional_pattern_analysis"
+  ],
+  "safety_framework": {
+    "layers": 8,
+    "pre_trade_validation": true,
+    "macro_aware_sizing": true,
+    "sector_concentration_limits": true,
+    "anomaly_detection": true,
+    "daily_loss_circuit_breaker": true,
+    "stop_loss_enforcement": true,
+    "cash_reserve_minimum": true,
+    "vix_adaptive_stops": true
+  },
+  "decision_methodology": "ReAct (Reasoning + Acting)",
+  "decision_loop": "discover → plan → execute → verify",
+  "data_sources": [
+    "Yahoo Finance (real-time pricing, financials, analyst ratings)",
+    "FRED (yield curve, VIX, credit spreads, unemployment)",
+    "RapidAPI (Congressional STOCK Act disclosures)",
+    "Alpaca Markets (trade execution, portfolio management)"
+  ]
+}

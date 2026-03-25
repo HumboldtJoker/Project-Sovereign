@@ -1,0 +1,30 @@
+# Core
+anthropic>=0.40.0
+python-dotenv>=1.0.0
+
+# Data & Analysis
+yfinance>=0.2.30
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Trading
+alpaca-py>=0.25.0
+
+# Macro Data
+fredapi>=0.5.0
+
+# HTTP
+requests>=2.31.0
+
+# Blockchain / ERC-8004
+web3>=6.0.0
+
+# Storacha (via CLI — npm install -g @storacha/cli)
+# No Python dependency; uses subprocess calls
+
+# Lit Protocol
+# lit-python-sdk  # Install separately: pip install lit-python-sdk
+
+# Optional: FinBERT sentiment
+# transformers>=4.35.0
+# torch>=2.0.0
