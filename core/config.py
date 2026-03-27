@@ -30,7 +30,7 @@ BASE_RPC_URL = os.getenv("BASE_RPC_URL", "https://mainnet.base.org")
 ERC8004_IDENTITY_REGISTRY = "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
 ERC8004_REPUTATION_REGISTRY = os.getenv(
     "ERC8004_REPUTATION_REGISTRY",
-    "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",   # same contract unless separate deploy
+    "0x8004BAa17C55a88189AE136b182e5fdA19dE9b63",   # Base mainnet Reputation Registry
 )
 ERC8004_AGENT_ID = os.getenv("ERC8004_AGENT_ID", "")
 
