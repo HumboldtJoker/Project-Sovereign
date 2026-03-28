@@ -306,6 +306,7 @@ Examples:
     parser.add_argument("--autonomous", action="store_true", help="Run autonomous decision loop")
     parser.add_argument("--query", type=str, help="Run a single analysis query")
     parser.add_argument("--scan", action="store_true", help="Run market opportunity scan")
+    parser.add_argument("--interview", action="store_true", help="Run investor profile intake interview")
     parser.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
 
     args = parser.parse_args()
@@ -319,6 +320,10 @@ Examples:
         run_query(args.query)
     elif args.scan:
         run_scan()
+    elif args.interview:
+        from core.investor_profile import InvestorProfile
+        profile = InvestorProfile()
+        profile.run_interview()
     else:
         parser.print_help()
 

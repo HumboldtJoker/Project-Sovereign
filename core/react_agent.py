@@ -55,6 +55,15 @@ class ReActAgent:
         except Exception:
             pass  # KG not available — agent runs without historical context
 
+        # Build investor profile context
+        investor_context = ""
+        try:
+            from core.investor_profile import InvestorProfile
+            profile = InvestorProfile()
+            investor_context = f"\n{profile.get_prompt_context()}\n"
+        except Exception:
+            pass
+
         return f"""You are an autonomous market intelligence agent using ReAct methodology.
 
 Your mission is to provide thorough, data-driven investment analysis by:
@@ -62,7 +71,7 @@ Your mission is to provide thorough, data-driven investment analysis by:
 2. Using available tools to gather real market data
 3. Reasoning through information systematically
 4. Providing clear, actionable recommendations
-{market_context}
+{investor_context}{market_context}
 RULES:
 - Always show reasoning before taking actions
 - Use tools for real data — never fabricate numbers
