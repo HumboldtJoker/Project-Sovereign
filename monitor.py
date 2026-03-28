@@ -252,6 +252,17 @@ def strategy_review():
         with open(review_path, "a") as f:
             f.write(json.dumps(review_log, default=str) + "\n")
 
+        # Generate plain-language narrative for retail investors
+        try:
+            from core.narrator import Narrator
+            narrator = Narrator()
+            plain = narrator.narrate_strategy_review(review_log)
+            if plain:
+                logger.info("Narrative: %s", plain[:150])
+                review_log["narrative"] = plain
+        except Exception:
+            pass
+
         # Record in KG
         try:
             from memory.kg_engine import record_decision

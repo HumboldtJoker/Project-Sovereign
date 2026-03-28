@@ -60,6 +60,13 @@ try:
 except ImportError:
     HAS_MEMORY = False
 
+# ── Narrator ─────────────────────────────────────────────────────────────────
+try:
+    from core.narrator import Narrator
+    HAS_NARRATOR = True
+except ImportError:
+    HAS_NARRATOR = False
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -222,6 +229,34 @@ def run_autonomous():
             logger.info("Knowledge graph enriched from run")
         except Exception as e:
             logger.warning("KG enrichment failed (non-fatal): %s", e)
+
+    # Generate plain-language narratives and daily reflection
+    if HAS_NARRATOR:
+        try:
+            narrator = Narrator()
+
+            # Narrate each decision
+            for decision in result.get("decisions", []):
+                narrative = narrator.narrate_decision(decision, regime=result.get("decisions", [{}])[0].get("result", "")[:100])
+                if narrative:
+                    logger.info("Narrative: %s", narrative[:100])
+
+            # Daily reflection
+            reflection = narrator.daily_reflection(
+                decisions=result.get("decisions", []),
+                portfolio_start={"portfolio_value": 100000},
+                portfolio_end={"portfolio_value": 0},  # Will be filled by actual state
+                regime_history=["NEUTRAL"],
+            )
+            if reflection:
+                logger.info("Daily reflection generated")
+                print(f"\n{'='*60}")
+                print("DAILY REFLECTION")
+                print(f"{'='*60}")
+                print(reflection)
+                print(f"{'='*60}\n")
+        except Exception as e:
+            logger.warning("Narration failed (non-fatal): %s", e)
 
     # Print summary
     print(f"\n{'='*60}")
