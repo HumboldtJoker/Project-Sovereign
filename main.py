@@ -22,10 +22,8 @@ import argparse
 import json
 import logging
 import sys
-from datetime import datetime, timezone
-from pathlib import Path
 
-from core.config import PROJECT_ROOT, ANTHROPIC_API_KEY, ALPACA_PAPER
+from core.config import ANTHROPIC_API_KEY, ALPACA_PAPER
 from core.react_agent import ReActAgent
 from core.tool_registry import Tool
 from core.decision_loop import DecisionLoop
@@ -45,13 +43,8 @@ from execution.risk_manager import RiskManager
 from execution.order_executor import OrderExecutor
 from execution.portfolio_manager import PortfolioManager
 
-# ── Safety ───────────────────────────────────────────────────────────────────
-from safety.guardrails import SafetyGuardrails
-
 # ── Integrations ─────────────────────────────────────────────────────────────
 from integrations.storacha.storage import upload_execution_log, is_cli_available as storacha_available
-from integrations.lit_protocol.access_control import classify_report_tier
-from integrations.lit_protocol.encryption import encrypt_report
 
 # ── Memory ───────────────────────────────────────────────────────────────────
 try:
