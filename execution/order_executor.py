@@ -222,6 +222,31 @@ class OrderExecutor:
                 ticker, action, order_value, (order_value / portfolio_value) * 100,
             )
 
+        # 7. Duplicate order check: prevent submitting the same order twice
+        if self.mode == "alpaca" and self.alpaca_client:
+            try:
+                pending = self.alpaca_client.get_orders()
+                for existing in pending:
+                    if (existing.symbol == ticker
+                            and existing.side.value == action.lower()
+                            and str(existing.qty) == str(int(quantity))
+                            and existing.status.value in ("accepted", "pending_new", "new")):
+                        logger.warning(
+                            "Duplicate order blocked: %s %s %s already pending (order %s)",
+                            action, quantity, ticker, existing.id,
+                        )
+                        return {
+                            "success": True,
+                            "order_id": str(existing.id),
+                            "status": "already_pending",
+                            "message": f"Order already exists: {action} {quantity} {ticker}",
+                            "ticker": ticker,
+                            "action": action,
+                            "quantity": quantity,
+                        }
+            except Exception as e:
+                logger.debug("Duplicate check skipped: %s", e)
+
         if self.mode == "local":
             return self._execute_paper_order(ticker, action, quantity, order_type, limit_price)
         else:

@@ -5,3 +5,7 @@ data/
 logs/
 .venv/
 agent_log.json
+node_modules/
+demo/video/public/clips/
+demo/video/.cache/
+demo/video/package-lock.json
