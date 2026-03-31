@@ -8,7 +8,7 @@ OUTPUT="demo/sovereign_agent_demo.mp4"
 TMPDIR="/tmp/video_assembly"
 mkdir -p "$TMPDIR"
 
-echo "=== Sovereign Market Intelligence Agent — Video Assembly ==="
+echo "=== Sovereign — Video Assembly ==="
 echo ""
 
 # Build the sequence file

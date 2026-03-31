@@ -1,6 +1,6 @@
-# Sovereign Market Intelligence Agent
+# Sovereign
 
-**Autonomous, verifiable market analysis with 8-layer safety and decentralized audit trails.**
+**Autonomous market intelligence. Verifiable. Explainable. For everyone.**
 
 ## What It Does
 

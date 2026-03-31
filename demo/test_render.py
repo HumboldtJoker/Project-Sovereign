@@ -158,7 +158,7 @@ def queue_and_wait(api_prompt, timeout=600):
 
 
 if __name__ == "__main__":
-    print("Sovereign Market Intelligence Agent — Video Render")
+    print("Sovereign — Video Render")
     print("=" * 50)
 
     # Test with scene 32 (coin on moss)

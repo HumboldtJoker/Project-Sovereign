@@ -1,5 +1,5 @@
 """
-Sovereign Market Intelligence Agent — Live Dashboard
+Sovereign — Live Dashboard
 
 Real-time visualization of the autonomous decision loop.
 FastAPI + WebSocket + single HTML page. No build tools.
@@ -29,7 +29,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Sovereign Market Intelligence Agent")
+app = FastAPI(title="Sovereign")
 
 # ── Shared state ─────────────────────────────────────────────────────────────
 state = {
@@ -206,7 +206,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sovereign Market Intelligence Agent</title>
+<title>Sovereign — Market Intelligence</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -449,7 +449,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
 <body>
 
 <div class="header">
-  <h1>SOVEREIGN MARKET INTELLIGENCE AGENT</h1>
+  <h1>SOVEREIGN</h1>
   <div class="status">
     <div class="status-dot" id="statusDot"></div>
     <span id="statusText" style="font-size:12px; color:#546e7a">IDLE</span>

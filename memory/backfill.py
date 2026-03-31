@@ -576,7 +576,7 @@ def main() -> None:
     banner = (
         "\n"
         "================================================================\n"
-        "  Sovereign Market Intelligence Agent — Historical Backfill\n"
+        "  Sovereign — Historical Backfill\n"
         "================================================================\n"
     )
     print(banner)

@@ -1,5 +1,5 @@
 """
-Storacha retrieval integration for Sovereign Market Intelligence Agent.
+Storacha retrieval integration for Sovereign.
 
 Retrieves content from Storacha (IPFS/Filecoin) by CID via the public
 HTTP gateway and optionally verifies content integrity.

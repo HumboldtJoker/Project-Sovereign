@@ -6,7 +6,7 @@
 "What if an autonomous AI agent could deliver institutional-grade analysis for five cents?"
 
 ## 0:20–0:50 — Architecture
-"This is the Sovereign Market Intelligence Agent. It uses a ReAct reasoning loop — the same Thought-Action-Observation pattern used by research scientists — powered by Claude."
+"This is the Sovereign. It uses a ReAct reasoning loop — the same Thought-Action-Observation pattern used by research scientists — powered by Claude."
 
 [Show architecture diagram]
 
@@ -60,4 +60,4 @@
 
 "And one more thing. This agent wasn't just designed by AI — it was built by an autonomous agentic swarm called Project Agent Army, directed by another autonomous AI agent. Autonomous systems building autonomous systems. It's agents all the way down."
 
-"Sovereign Market Intelligence Agent. Let the agent cook."
+"Sovereign. Let the agent cook."

@@ -279,7 +279,7 @@ Patterns from these can be adapted but the submission repo must be new code.
 
 ```json
 {
-  "agent_name": "Sovereign Market Intelligence Agent",
+  "agent_name": "Sovereign",
   "version": "1.0.0",
   "operator_wallet": "<OPERATOR_ETH_ADDRESS>",
   "erc8004_identity": "<ERC8004_AGENT_ID>",
@@ -444,7 +444,7 @@ event MetadataSet(uint256 indexed agentId, string indexed indexedMetadataKey, st
 ```json
 {
   "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
-  "name": "Sovereign Market Intelligence Agent",
+  "name": "Sovereign",
   "description": "Autonomous market analysis with 8-layer safety",
   "image": "imageURL",
   "services": [

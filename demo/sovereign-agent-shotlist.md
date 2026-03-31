@@ -1,4 +1,4 @@
-# Sovereign Market Intelligence Agent — Video Shot List
+# Sovereign — Video Shot List
 
 ## Production Specs
 - **Total Duration:** 3:00 (180 seconds)
@@ -53,7 +53,7 @@
 - **Duration:** 5s
 - **Wan 2.1 Prompt:** `Cinematic close-up of an abstract luminous orb of cyan and gold light forming in the center of a solarpunk bio-integrated server room, living moss walls on either side, warm amber light from skylights above, cool blue data streams spiraling into the orb from all directions, volumetric fog, photorealistic, macro lens detail, shallow depth of field`
 - **Negative Prompt:** `cartoon, anime, text, watermark, low quality, blurry, human face, robot, humanoid, dark dystopian`
-- **Narration:** *"This is the Sovereign Market Intelligence Agent."*
+- **Narration:** *"This is the Sovereign."*
 
 ### Scene 06 — ReAct Loop Visualization
 - **Timestamp:** 0:25–0:30
@@ -306,7 +306,7 @@
 - **Duration:** 5s
 - **Wan 2.1 Prompt:** `Cinematic final shot — extreme wide angle of a vast solarpunk cityscape at golden hour, rooftop gardens on every building, solar panels gleaming, holographic data streams flowing gently between buildings like rivers of light, camera slowly craning upward toward a brilliant sunset sky with wispy clouds, a single small luminous cyan point of light rises from the city center into the sky, photorealistic, epic scale, hopeful and triumphant, orchestral finale energy, the light fades to warm white`
 - **Negative Prompt:** `cartoon, anime, text, watermark, low quality, blurry, dark, night, dystopian, pollution, destruction, people close-up`
-- **Narration:** *[Title card fades in over final frames: "Sovereign Market Intelligence Agent" — beat — subtitle: "Let the agent cook." — fade to black]*
+- **Narration:** *[Title card fades in over final frames: "Sovereign" — beat — subtitle: "Let the agent cook." — fade to black]*
 
 ---
 

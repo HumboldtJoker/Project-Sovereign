@@ -1,5 +1,5 @@
 """
-Knowledge Graph Engine for the Sovereign Market Intelligence Agent.
+Knowledge Graph Engine for the Sovereign.
 ==================================================================
 
 HippoRAG 2 / CatRAG-inspired associative memory adapted for market data.

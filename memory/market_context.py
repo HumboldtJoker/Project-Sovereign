@@ -1,5 +1,5 @@
 """
-Market Context Builder for the Sovereign Market Intelligence Agent.
+Market Context Builder for the Sovereign.
 ===================================================================
 
 Builds concise context briefings for the ReAct agent's system prompt by

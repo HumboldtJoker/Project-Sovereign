@@ -1,5 +1,5 @@
 """
-Market Memory — Knowledge Graph Engine for the Sovereign Market Intelligence Agent.
+Market Memory — Knowledge Graph Engine for the Sovereign.
 
 Provides persistent, graph-structured memory that lets the agent learn from
 past market regimes, decisions, and outcomes via Personalized PageRank retrieval.

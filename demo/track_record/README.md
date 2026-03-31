@@ -1,7 +1,7 @@
 # Track Record — Real Market Data, Real Decisions
 
 These are not simulations. Every file in this directory contains actual decisions
-made by the Sovereign Market Intelligence Agent against live market data,
+made by the Sovereign against live market data,
 executed on Alpaca paper trading.
 
 ## Files

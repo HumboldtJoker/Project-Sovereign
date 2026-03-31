@@ -1,5 +1,5 @@
 """
-Storacha storage integration for Sovereign Market Intelligence Agent.
+Storacha storage integration for Sovereign.
 
 Uploads execution logs and analysis reports to Storacha (IPFS/Filecoin)
 via the Storacha CLI.  This provides decentralized, content-addressed

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sovereign Market Intelligence Agent
+Sovereign
 ====================================
 Autonomous market analysis with 8-layer safety, multi-source intelligence,
 and verifiable execution logging.
@@ -287,7 +287,7 @@ def run_scan():
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Sovereign Market Intelligence Agent",
+        description="Sovereign",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

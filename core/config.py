@@ -1,5 +1,5 @@
 """
-Centralized configuration for Sovereign Market Intelligence Agent.
+Centralized configuration for Sovereign.
 
 All environment variables, API keys, and tunable parameters in one place.
 """

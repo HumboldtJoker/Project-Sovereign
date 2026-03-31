@@ -1,0 +1,48 @@
+{
+  "session_id": "a7a57ca5-073a-4e66-941e-bc1438fe2039",
+  "agent_id": "",
+  "timestamp_start": "2026-03-30T03:27:35.938348+00:00",
+  "timestamp_end": "2026-03-30T03:36:33.275424+00:00",
+  "decisions": [
+    {
+      "step": 1,
+      "phase": "discover",
+      "action": "scan_market_opportunities",
+      "reasoning": "Autonomous market scan for opportunities",
+      "tools_called": [
+        "get_market_regime",
+        "get_aggregate_congressional",
+        "get_technical_indicators",
+        "get_news_sentiment",
+        "get_technical_indicators",
+        "get_technical_indicators",
+        "get_news_sentiment",
+        "get_portfolio_summary",
+        "calculate_position_size"
+      ],
+      "result": "{\n  \"analysis_summary\": {\n    \"market_regime\": {\n      \"status\": \"NEUTRAL\",\n      \"risk_modifier\": 0.75,\n      \"key_factors\": [\n        \"Elevated VIX at 27.44 signals heightened volatility and investor fear\",\n        \"Healthy yield curve (0.56) and tight credit spreads (3.21) are positive\",\n        \"Restrictive Fed policy (3.64%) requires defensive positioning\",\n        \"Recommendation: MODERATE CAUTION - selective stock picking required\"\n      ]\n    },\n    \"congressional_trading_insights\": {\n  ",
+      "timestamp": "2026-03-30T03:35:17.466477+00:00"
+    },
+    {
+      "step": 2,
+      "phase": "plan",
+      "action": "multi_layer_analysis",
+      "reasoning": "Comprehensive analysis across technical, sentiment, congressional, macro",
+      "tools_called": [],
+      "result": "Analysis incomplete",
+      "timestamp": "2026-03-30T03:36:33.275313+00:00"
+    }
+  ],
+  "retries": [],
+  "failures": [
+    {
+      "phase": "plan",
+      "reason": "Max iterations (12) reached without final answer"
+    }
+  ],
+  "final_output": {
+    "trades_executed": 0,
+    "analysis_reports_generated": 1,
+    "phases_completed": 2
+  }
+}

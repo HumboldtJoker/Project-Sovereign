@@ -1,5 +1,5 @@
 """
-Pre-action safety guardrails for the Sovereign Market Intelligence Agent.
+Pre-action safety guardrails for the Sovereign.
 
 Wraps the RiskManager's validation with additional autonomous-specific checks
 including market-hours enforcement, daily circuit breakers, API-credit gating,

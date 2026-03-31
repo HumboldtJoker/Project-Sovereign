@@ -1,9 +1,9 @@
 {
-  "agent_name": "Sovereign Market Intelligence Agent",
+  "agent_name": "Sovereign",
   "version": "1.0.0",
   "operator_wallet": "",
   "erc8004_identity": "",
-  "description": "Autonomous market analysis agent with 8-layer safety system, multi-source intelligence, and verifiable execution logging. Democratizing institutional-grade investment research at $0.05 per analysis.",
+  "description": "Autonomous market intelligence agent with 8-layer safety, multi-source analysis, and verifiable execution. Democratizing institutional-grade investment research.",
   "supported_tools": [
     "alpaca_trading",
     "yahoo_finance",
@@ -49,7 +49,7 @@
     "vix_adaptive_stops": true
   },
   "decision_methodology": "ReAct (Reasoning + Acting)",
-  "decision_loop": "discover → plan → execute → verify",
+  "decision_loop": "discover \u2192 plan \u2192 execute \u2192 verify",
   "data_sources": [
     "Yahoo Finance (real-time pricing, financials, analyst ratings)",
     "FRED (yield curve, VIX, credit spreads, unemployment)",

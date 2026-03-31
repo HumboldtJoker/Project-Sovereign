@@ -9,7 +9,7 @@ TMPDIR="/tmp/video_assembly_v2"
 rm -rf "$TMPDIR"
 mkdir -p "$TMPDIR"
 
-echo "=== Sovereign Market Intelligence Agent — Video Assembly v2 ==="
+echo "=== Sovereign — Video Assembly v2 ==="
 
 # Map scenes to sections
 declare -A SECTION_MAP

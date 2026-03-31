@@ -1,5 +1,5 @@
 """
-Anomaly detection for the Sovereign Market Intelligence Agent.
+Anomaly detection for the Sovereign.
 
 Detects unsafe market conditions (price spikes, volume blowouts) and
 portfolio drift so the autonomous agent can pause or re-evaluate before

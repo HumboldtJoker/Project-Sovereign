@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sovereign Market Intelligence Agent — Continuous Monitor
+Sovereign — Continuous Monitor
 
 Tiered monitoring system:
   - Position checks:   every 30 seconds (stop-loss, circuit breaker, anomalies)
