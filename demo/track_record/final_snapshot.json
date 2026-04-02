@@ -1,0 +1,36 @@
+{
+  "date": "2026-04-01",
+  "portfolio_value": 100118.12,
+  "cash": 83087.47,
+  "pnl": 118.11999999999534,
+  "positions": [
+    {
+      "ticker": "JNJ",
+      "qty": 40,
+      "entry": 242.09,
+      "current": 243.86,
+      "pnl": 70.8
+    },
+    {
+      "ticker": "PG",
+      "qty": 25,
+      "entry": 142.9912,
+      "current": 144.57,
+      "pnl": 39.47
+    },
+    {
+      "ticker": "SO",
+      "qty": 25,
+      "entry": 96.3612,
+      "current": 97.11,
+      "pnl": 18.72
+    },
+    {
+      "ticker": "VZ",
+      "qty": 25,
+      "entry": 50.63,
+      "current": 49.37,
+      "pnl": -31.5
+    }
+  ]
+}
