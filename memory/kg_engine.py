@@ -14,6 +14,7 @@ Architecture:
 Database: market_memory on cc-postgres (localhost:5434)
 """
 
+import os
 import sys
 import logging
 import math
@@ -137,7 +138,7 @@ def init_db() -> Dict[str, Any]:
         host=MARKET_DB_HOST,
         port=MARKET_DB_PORT,
         user="cc",
-        password="cc_resistance_2026",
+        password=os.environ.get("NEO4J_PASSWORD", ""),
         dbname="postgres",
     )
     bootstrap_conn.autocommit = True
@@ -166,7 +167,7 @@ def init_db() -> Dict[str, Any]:
         host=MARKET_DB_HOST,
         port=MARKET_DB_PORT,
         user="cc",
-        password="cc_resistance_2026",
+        password=os.environ.get("NEO4J_PASSWORD", ""),
         dbname=MARKET_DB_NAME,
     )
     ext_conn.autocommit = True
