@@ -1,0 +1,19 @@
+# Copy to .envrc next to sovereign_cron.sh. Paper trading is the default.
+ALPACA_API_KEY=
+ALPACA_SECRET_KEY=
+ALPACA_PAPER=true
+# Live trading additionally requires SOVEREIGN_LIVE_CONFIRM=yes. Don't, until
+# the evaluation in README.md says the strategy has an edge.
+FRED_API_KEY=
+# Thesis generation: either an API key (backend sdk/auto) or a logged-in
+# Claude CLI (backend cli). SOVEREIGN_CLAUDE_CLI overrides the CLI path.
+ANTHROPIC_API_KEY=
+SOVEREIGN_THESIS_BACKEND=auto
+# Optional memory (Postgres). Without it the pipeline runs memory-less.
+SOVEREIGN_PG_HOST=localhost
+SOVEREIGN_PG_PORT=5432
+SOVEREIGN_PG_USER=
+SOVEREIGN_PG_PASSWORD=
+SOVEREIGN_PG_DB=sovereign_memory
+# Optional alerts
+DISCORD_WEBHOOK_URL=
